@@ -12,12 +12,12 @@ const connectDB = async () => {
 
   try {
     const options = {
-      serverSelectionTimeoutMS: 60000, // Give more time for serverless cold starts
-      socketTimeoutMS: 60000, // Close sockets after 45 seconds of inactivity
+      serverSelectionTimeoutMS: 5000,
+      socketTimeoutMS: 8000,
+      connectTimeoutMS: 5000,
       retryWrites: true,
       w: "majority",
-      maxPoolSize: 10, // Maintain up to 10 socket connections
-      connectTimeoutMS: 60000, // Close sockets after 60 seconds of inactivity
+      maxPoolSize: 10,
     };
 
     // Connect to MongoDB
