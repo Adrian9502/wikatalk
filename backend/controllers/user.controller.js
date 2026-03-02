@@ -197,7 +197,7 @@ exports.loginWithGoogle = async (req, res) => {
 
       // Send welcome email for new Google users
       try {
-        await sendWelcomeEmail(user);
+        sendWelcomeEmail(user);
         console.log(`Welcome email sent to new Google user: ${email}`);
       } catch (emailError) {
         console.error("Welcome email failed to send:", emailError);
@@ -351,7 +351,7 @@ exports.verifyEmail = async (req, res) => {
 
     // Send welcome email
     try {
-      await sendWelcomeEmail(user);
+      sendWelcomeEmail(user);
     } catch (emailError) {
       console.error("Welcome email failed to send:", emailError);
       // Continue even if welcome email fails
