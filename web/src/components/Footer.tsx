@@ -36,20 +36,20 @@ const Footer: React.FC = () => {
     ],
   };
 
-  const socialLinks = [
-    { name: "GitHub", icon: FaGithub, href: "https://github.com/Adrian9502" },
-    {
-      name: "Facebook",
-      icon: FaFacebook,
-      href: "https://www.facebook.com/john.adrian.bonto",
-    },
-    {
-      name: "LinkedIn",
-      icon: FaLinkedin,
-      href: "https://www.linkedin.com/in/john-adrian-bonto-a65704283/",
-    },
-    { name: "Email", icon: SiGmail, href: "mailto:bontojohnadrian@gmail.com" },
-  ];
+  // const socialLinks = [
+  //   { name: "GitHub", icon: FaGithub, href: "https://github.com/Adrian9502" },
+  //   {
+  //     name: "Facebook",
+  //     icon: FaFacebook,
+  //     href: "https://www.facebook.com/john.adrian.bonto",
+  //   },
+  //   {
+  //     name: "LinkedIn",
+  //     icon: FaLinkedin,
+  //     href: "https://www.linkedin.com/in/john-adrian-bonto-a65704283/",
+  //   },
+  //   { name: "Email", icon: SiGmail, href: "mailto:bontojohnadrian@gmail.com" },
+  // ];
 
   return (
     <>
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
                 translate, and connect with Filipino communities through
                 innovation and gamified learning.
               </p>
-              <div className="flex space-x-4">
+              {/* <div className="flex space-x-4">
                 {socialLinks.map((social, index) => {
                   const IconComponent = social.icon;
                   return (
@@ -114,7 +114,7 @@ const Footer: React.FC = () => {
                     </a>
                   );
                 })}
-              </div>
+              </div> */}
             </div>
 
             {/* Links Sections */}
