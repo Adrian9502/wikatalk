@@ -9,9 +9,6 @@ import {
   TERMS_OF_SERVICE_CONTENT,
 } from "../constants/legal";
 
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa6";
-import { SiGmail } from "react-icons/si";
-
 const Footer: React.FC = () => {
   const [privacyModalOpen, setPrivacyModalOpen] = useState(false);
   const [termsModalOpen, setTermsModalOpen] = useState(false);
@@ -85,36 +82,6 @@ const Footer: React.FC = () => {
                 translate, and connect with Filipino communities through
                 innovation and gamified learning.
               </p>
-              {/* <div className="flex space-x-4">
-                {socialLinks.map((social, index) => {
-                  const IconComponent = social.icon;
-                  return (
-                    <a
-                      key={index}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
-                      style={{
-                        backgroundColor: `${COLORS.primary.blue}20`,
-                        color: COLORS.text.secondary,
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.backgroundColor =
-                          COLORS.primary.blue;
-                        e.currentTarget.style.color = COLORS.text.primary;
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.backgroundColor = `${COLORS.primary.blue}20`;
-                        e.currentTarget.style.color = COLORS.text.secondary;
-                      }}
-                      title={social.name}
-                    >
-                      <IconComponent />
-                    </a>
-                  );
-                })}
-              </div> */}
             </div>
 
             {/* Links Sections */}
