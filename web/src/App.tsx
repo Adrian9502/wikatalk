@@ -7,7 +7,7 @@ import {
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
-import About from "./components/About";
+// import About from "./components/About";
 import Download from "./components/Download";
 import Explore from "./components/Explore";
 import Footer from "./components/Footer";
@@ -28,7 +28,7 @@ function App() {
               <Hero />
               <Features />
               <Explore />
-              <About />
+              {/* <About /> */}
               <Download />
               <Footer />
             </>

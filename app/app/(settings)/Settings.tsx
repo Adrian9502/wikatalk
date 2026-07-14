@@ -213,11 +213,11 @@ const Settings = () => {
           label: "Contact Support",
           onPress: () => setContactModalVisible(true),
         },
-        {
-          icon: "info",
-          label: "About Us",
-          onPress: () => router.push("/(settings)/About"),
-        },
+        // {
+        //   icon: "info",
+        //   label: "About Us",
+        //   onPress: () => router.push("/(settings)/About"),
+        // },
       ],
     },
   ];
